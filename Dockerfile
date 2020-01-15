@@ -134,8 +134,8 @@ RUN /bin/bash -c '. /opt/ros/kinetic/setup.bash; cd /home/catkin_ws; catkin_make
 
 # Clone and build the Racecar simulator
 RUN mkdir -p /home/catkin_ws/src/f110-fall2019-skeletons
-RUN git clone https://github.com/mlab-upenn/f110-fall2019-skeletons /home/catkin_ws/src/f110-fall2019-skeletons
-RUN /bin/bash -c '. /opt/ros/kinetic/setup.bash; cd /home/catkin_ws/src/f110-fall2019-skeletons'
+RUN git clone https://github.com/f1tenth/f110_ros /home/catkin_ws/src/f110_ros
+RUN /bin/bash -c '. /opt/ros/kinetic/setup.bash; cd /home/catkin_ws/src/f110_ros'
 
 RUN /bin/bash -c '. /opt/ros/kinetic/setup.bash; cd /home/catkin_ws; catkin_make'
 
